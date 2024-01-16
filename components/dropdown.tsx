@@ -10,15 +10,23 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
-export default function Dropdown(props: { items: string[]; title?: string }) {
+export default function Dropdown(props: {
+  items: string[];
+  title?: string;
+  trigger?: React.ReactNode;
+}) {
   const [_item, setItem] = React.useState(props.items[0]);
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <div className="bg-slate-900 hover:bg-slate-800 text-gray-400 hover:text-white w-24 text-sm flex justify-center items-center py-2 px-2 rounded cursor-pointer">
-          {props.title ?? _item}
-          <FiChevronDown className="ml-auto" />
-        </div>
+        {props.trigger ? (
+          props.trigger
+        ) : (
+          <div className="bg-slate-900 hover:bg-slate-800 text-gray-400 hover:text-white w-24 text-sm flex justify-center items-center py-2 px-2 rounded cursor-pointer">
+            {props.title ?? _item}
+            <FiChevronDown className="ml-auto" />
+          </div>
+        )}
       </DropdownMenuTrigger>
 
       <DropdownMenuContent>

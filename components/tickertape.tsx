@@ -20,48 +20,48 @@ export default function tickertape() {
           <FiChevronDown className="ml-2" />
         </div>
       </div>
-      <div className="px-8 py-4 text-lg text-rose-500 border-solid border-r border-l border-slate-50/10">
+      <div className="h-4/5 flex flex-col justify-center px-8 text-lg text-rose-500 border-solid border-r border-l border-slate-50/10">
         $42,712
       </div>
-      <div className="p-4 border-solid border-r border-slate-50/10">
-        <div className="text-xs text-slate-500 mb-1">Oracle Price</div>
-        <div className="text-sm text-slate-200 flex items-center">$42,687</div>
+      <div className="h-4/5 flex flex-col justify-center items-start px-4 border-solid border-r border-slate-50/10">
+        <div className="text-[10px] text-slate-500 mb-0.5">Oracle Price</div>
+        <div className="text-xs text-slate-200 flex items-center">$42,687</div>
       </div>
-      <div className="p-4 border-solid border-r border-slate-50/10">
-        <div className="text-xs text-slate-500 mb-1">24h Change</div>
-        <div className="text-sm text-rose-500 flex items-center">
+      <div className="h-4/5 flex flex-col justify-center items-start px-4 border-solid border-r border-slate-50/10">
+        <div className="text-[10px] text-slate-500 mb-0.5">24h Change</div>
+        <div className="text-xs text-rose-500 flex items-center">
           <PiCaretDownFill className="mr-1" />
           $323&nbsp;0.75%
         </div>
       </div>
-      <div className="p-4 border-solid border-r border-slate-50/10">
-        <div className="text-xs text-slate-500 mb-1">Open Interest</div>
-        <div className="text-sm text-slate-200 flex items-center">
+      <div className="h-4/5 flex flex-col justify-center items-start px-4 border-solid border-r border-slate-50/10">
+        <div className="text-[10px] text-slate-500 mb-0.5">Open Interest</div>
+        <div className="text-xs text-slate-200 flex items-center">
           237.66
           <div className="bg-slate-500 text-white text-xs py-0.5 px-1 ml-2 rounded">
             BTC
           </div>
         </div>
       </div>
-      <div className="p-4 border-solid border-r border-slate-50/10">
-        <div className="text-xs text-slate-500 mb-1">1h Funding</div>
-        <div className="text-sm text-emerald-500 flex items-center">
+      <div className="h-4/5 flex flex-col justify-center items-start px-4 border-solid border-r border-slate-50/10">
+        <div className="text-[10px] text-slate-500 mb-0.5">1h Funding</div>
+        <div className="text-xs text-emerald-500 flex items-center">
           0.002024%
         </div>
       </div>
-      <div className="p-4 border-solid border-r border-slate-50/10">
-        <div className="text-xs text-slate-500 mb-1">24h Volume</div>
-        <div className="text-sm text-slate-200 flex items-center">
+      <div className="h-4/5 flex flex-col justify-center items-start px-4 border-solid border-r border-slate-50/10">
+        <div className="text-[10px] text-slate-500 mb-0.5">24h Volume</div>
+        <div className="text-xs text-slate-200 flex items-center">
           $194,850,159
         </div>
       </div>
-      <div className="p-4 border-solid border-r border-slate-50/10">
-        <div className="text-xs text-slate-500 mb-1">24h Trade</div>
-        <div className="text-sm text-slate-200 flex items-center">98,395</div>
+      <div className="h-4/5 flex flex-col justify-center items-start px-4 border-solid border-r border-slate-50/10">
+        <div className="text-[10px] text-slate-500 mb-0.5">24h Trade</div>
+        <div className="text-xs text-slate-200 flex items-center">98,395</div>
       </div>
       <div className="p-4 border-solid">
-        <div className="text-xs text-slate-500 mb-1">Next Funding</div>
-        <div className="text-sm text-slate-200 flex items-center">28:30</div>
+        <div className="text-[10px] text-slate-500 mb-0.5">Next Funding</div>
+        <div className="text-xs text-slate-200 flex items-center">28:30</div>
       </div>
     </div>
   );

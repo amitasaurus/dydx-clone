@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx/lite';
 import styles from '@/styles/dashboard.module.css';
 import Orderbook from '@/components/dashboard/orderbook';
+import Trade from '@/components/dashboard/trade';
 
 export default function dashboard() {
   return (
@@ -13,7 +14,7 @@ export default function dashboard() {
         </div>
       </div>
       <Orderbook />
-      <div className="text-white">Trade</div>
+      <Trade />
     </div>
   );
 }
