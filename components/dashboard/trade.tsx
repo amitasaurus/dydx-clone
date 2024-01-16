@@ -12,7 +12,7 @@ enum TradeType {
   SELL,
 }
 
-export default function trade() {
+export default function Trade() {
   const [activeTab, setActiveTab] = React.useState(0);
   const [tradeType, setTradeType] = React.useState(TradeType[0]);
 
@@ -59,11 +59,11 @@ export default function trade() {
       </div>
       <div>
         {/* Tab Button Group */}
-        <div className="bg-slate-900 width-full flex h-12 border-b border-slate-50/10 sticky top-0 z-20">
+        <div className="tab-group-container sticky top-0 z-20">
           {['Limit', 'Market'].map((tab, index) => (
             <div
               key={index}
-              className={`flex flex-1 cursor-pointer justify-center items-center text-sm border-r border-slate-50/10 ${
+              className={`tab-group ${
                 activeTab === index
                   ? 'bg-slate-950 text-white'
                   : 'text-slate-500'

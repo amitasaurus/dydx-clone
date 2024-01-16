@@ -98,4 +98,13 @@ input[type='number'] {
   .input {
     @apply w-full outline-none text-white bg-inherit appearance-none;
   }
+  .tab-group {
+    @apply flex flex-1 cursor-pointer justify-center items-center text-sm border-r border-slate-50/10;
+  }
+  .tab-group-container {
+    @apply bg-slate-900 w-full flex h-12 border-b border-slate-50/10;
+  }
+  .border-color {
+    @apply border-slate-50/10;
+  }
 }

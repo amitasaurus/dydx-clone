@@ -78,7 +78,7 @@ const OrderbookComponent: FC<IOrderbookComponent> = ({
   );
 };
 
-export default function orderbook() {
+export default function Orderbook() {
   const [activeTab, setActiveTab] = React.useState(0);
 
   const bids = generateRandomElements(totalItems);
@@ -86,10 +86,11 @@ export default function orderbook() {
   return (
     <div className="border-r border-slate-50/10 overflow-y-scroll">
       {/* Tab Button Group */}
-      <div className="bg-slate-900 width-full flex h-12 border-b border-slate-50/10 sticky top-0 z-20">
+      <div className="tab-group-container sticky top-0 z-20">
         {['Book', 'Trades'].map((tab, index) => (
           <div
-            className={`flex flex-1 cursor-pointer justify-center items-center text-sm border-r border-slate-50/10 ${
+            key={index}
+            className={`tab-group ${
               activeTab === index ? 'bg-slate-950 text-white' : 'text-slate-500'
             }`}
             onClick={() => setActiveTab(index)}

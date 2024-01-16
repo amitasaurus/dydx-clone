@@ -5,7 +5,7 @@ import Footer from '@/components/footer';
 
 export default function Home() {
   return (
-    <main className="max-h-screen flex flex-col">
+    <main className="max-h-screen flex flex-col overflow-hidden">
       <Nav />
       <TickerTape />
       <Dashboard />
