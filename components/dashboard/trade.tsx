@@ -18,40 +18,40 @@ export default function Trade() {
 
   return (
     <div>
-      <div className="p-4 flex justify-between border-b border-slate-50/10">
+      <div className="flex justify-between p-4 border-b border-slate-50/10">
         <div className="text-sm text-slate-200">Account</div>
         <div className="flex">
-          <div className="bg-slate-800 text-slate-200 px-2 py-1 mr-2 rounded-3xl text-xs border-slate-50/10 border cursor-pointer">
+          <div className="px-2 py-1 mr-2 text-xs border cursor-pointer bg-slate-800 text-slate-200 rounded-3xl border-slate-50/10">
             Withdraw
           </div>
-          <div className="bg-slate-800 text-slate-200 px-2 py-1 rounded-3xl text-xs border-slate-50/10 border cursor-pointer">
+          <div className="px-2 py-1 text-xs border cursor-pointer bg-slate-800 text-slate-200 rounded-3xl border-slate-50/10">
             Deposit
           </div>
         </div>
       </div>
       <div className="grid grid-cols-2 grid-rows-2">
-        <div className="p-4 border-slate-50/10 text-slate-500 border-b border-r">
-          <div className="text-xs flex items-center">
+        <div className="p-4 border-b border-r border-slate-50/10 text-slate-500">
+          <div className="flex items-center text-xs">
             <div>Leverage</div>
-            <FaSignal className="text-emerald-500 ml-1" />
+            <FaSignal className="ml-1 text-emerald-500" />
           </div>
           <div>-</div>
         </div>
-        <div className="p-4 border-slate-50/10 border-b text-slate-500">
-          <div className="text-xs flex">
+        <div className="p-4 border-b border-slate-50/10 text-slate-500">
+          <div className="flex text-xs">
             <div>Equity</div>
           </div>
           <div>-</div>
         </div>
-        <div className="p-4 border-slate-50/10 border-b border-r text-slate-500">
-          <div className="text-xs flex items-center">
+        <div className="p-4 border-b border-r border-slate-50/10 text-slate-500">
+          <div className="flex items-center text-xs">
             <div>Margin Usage</div>
-            <RiDonutChartLine className="text-emerald-500 ml-1" />
+            <RiDonutChartLine className="ml-1 text-emerald-500" />
           </div>
           <div>-</div>
         </div>
-        <div className="p-4 border-slate-50/10 border-b text-slate-500">
-          <div className="text-xs flex">
+        <div className="p-4 border-b border-slate-50/10 text-slate-500">
+          <div className="flex text-xs">
             <div>Buying Power</div>
           </div>
           <div>-</div>
@@ -59,7 +59,7 @@ export default function Trade() {
       </div>
       <div>
         {/* Tab Button Group */}
-        <div className="tab-group-container sticky top-0 z-20">
+        <div className="sticky top-0 z-20 tab-group-container">
           {['Limit', 'Market'].map((tab, index) => (
             <div
               key={index}
@@ -82,7 +82,7 @@ export default function Trade() {
             ]}
             title="More"
             trigger={
-              <div className="flex flex-1 cursor-pointer justify-center items-center text-sm text-slate-500">
+              <div className="flex items-center justify-center flex-1 text-sm cursor-pointer text-slate-500">
                 More
                 <FiChevronDown className="ml-1" />
               </div>
@@ -92,7 +92,7 @@ export default function Trade() {
 
         <div className="p-4">
           {/* Trade Type Toggle */}
-          <div className="bg-slate-800 flex w-full rounded-lg">
+          <div className="flex w-full rounded-lg bg-slate-800">
             {[TradeType[0], TradeType[1]].map((type, index) => (
               <div
                 key={index}
@@ -113,7 +113,7 @@ export default function Trade() {
           </div>
           {/* Input Form */}
           <form action="#" className="grid grid-cols-2 grid-rows-2">
-            <div className="col-span-2 my-4">
+            <div className="my-4 col-span-2">
               <Input type="number" label="Limit Price(USD)" fiat />
             </div>
             <div className="mr-2">

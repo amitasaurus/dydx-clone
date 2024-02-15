@@ -53,8 +53,8 @@ const OrderbookComponent: FC<IOrderbookComponent> = ({
 
   return (
     <div className="grid grid-cols-3 hover:bg-slate-800 my-0.5 relative">
-      <div className="text-xs text-white text-right py-1 z-10">{size}</div>
-      <div className="text-xs text-white text-right py-1 z-10">{price}</div>
+      <div className="z-10 py-1 text-xs text-right text-white">{size}</div>
+      <div className="z-10 py-1 text-xs text-right text-white">{price}</div>
       <div
         className={outerClass}
         style={{
@@ -84,9 +84,9 @@ export default function Orderbook() {
   const bids = generateRandomElements(totalItems);
   const asks = generateRandomElements(totalItems);
   return (
-    <div className="border-r border-slate-50/10 overflow-y-scroll">
+    <div className="overflow-y-scroll border-r border-slate-50/10">
       {/* Tab Button Group */}
-      <div className="tab-group-container sticky top-0 z-20">
+      <div className="sticky top-0 z-20 tab-group-container">
         {['Book', 'Trades'].map((tab, index) => (
           <div
             key={index}
@@ -104,19 +104,19 @@ export default function Orderbook() {
       <div
         className={cn('grid grid-cols-3 py-2 sticky top-12 z-20', styles.blur)}
       >
-        <div className="text-center flex text-xs items-center justify-end text-slate-500">
+        <div className="flex items-center justify-end text-xs text-center text-slate-500">
           Size
           <div className="bg-slate-500 text-white text-[10px] py-0.5 px-1 ml-2 rounded">
             BTC
           </div>
         </div>
-        <div className="text-center flex text-xs items-center justify-end text-slate-500">
+        <div className="flex items-center justify-end text-xs text-center text-slate-500">
           Price
           <div className="bg-slate-500 text-white text-[10px] py-0.5 px-1 ml-2 rounded">
             USD
           </div>
         </div>
-        <div className="flex-1 text-center flex text-xs items-center justify-center text-slate-500">
+        <div className="flex items-center justify-center flex-1 text-xs text-center text-slate-500">
           Mine
         </div>
       </div>
@@ -137,9 +137,9 @@ export default function Orderbook() {
           styles.blur
         )}
       >
-        <div className="text-xs text-white text-right">Spread</div>
-        <div className="text-xs text-white text-right">1</div>
-        <div className="text-xs text-white text-right pr-4">0.00%</div>
+        <div className="text-xs text-right text-white">Spread</div>
+        <div className="text-xs text-right text-white">1</div>
+        <div className="pr-4 text-xs text-right text-white">0.00%</div>
       </div>
       {/* Asks */}
       {asks.map((e, i) => (

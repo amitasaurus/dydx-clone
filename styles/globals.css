@@ -87,22 +87,22 @@ input[type='number'] {
 }
 @layer components {
   .btn-cta {
-    @apply w-full px-4 py-4 bg-indigo-600 hover:bg-indigo-500 text-white text-sm rounded-lg cursor-pointer -mt-4;
+    @apply w-full px-4 py-4 -mt-4 text-sm text-white bg-indigo-600 rounded-lg cursor-pointer hover:bg-indigo-500;
   }
   .input-container {
-    @apply w-full bg-slate-800 rounded-lg p-2 px-3 border border-slate-50/10;
+    @apply w-full p-2 px-3 border rounded-lg bg-slate-800 border-slate-50/10;
   }
   .input-label {
-    @apply text-slate-500 text-xs;
+    @apply text-xs text-slate-500;
   }
   .input {
-    @apply w-full outline-none text-white bg-inherit appearance-none;
+    @apply w-full text-white outline-none appearance-none bg-inherit;
   }
   .tab-group {
-    @apply flex flex-1 cursor-pointer justify-center items-center text-sm border-r border-slate-50/10;
+    @apply flex items-center justify-center flex-1 text-sm border-r cursor-pointer border-slate-50/10;
   }
   .tab-group-container {
-    @apply bg-slate-900 w-full flex h-12 border-b border-slate-50/10;
+    @apply flex w-full h-12 border-b bg-slate-900 border-slate-50/10;
   }
   .border-color {
     @apply border-slate-50/10;

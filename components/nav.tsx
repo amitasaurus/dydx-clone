@@ -7,18 +7,18 @@ import { FiBell, FiHelpCircle } from 'react-icons/fi';
 function Nav() {
   const active = 'Trade';
   return (
-    <nav className="bg-slate-900 h-12 py-2 px-1 flex items-center">
+    <nav className="flex items-center h-12 px-1 py-2 bg-slate-900">
       <Image
         src="/brand-logo.svg"
         alt="brand logo"
         width="48"
         height="32"
-        className="h-8 w-12"
+        className="w-12 h-8"
       />
-      <div className="px-2 border-solid border-r border-l border-slate-50/10">
+      <div className="px-2 border-l border-r border-solid border-slate-50/10">
         <Dropdown items={['v4', 'v3']} />
       </div>
-      <div className="px-2 border-solid border-r border-slate-50/10">
+      <div className="px-2 border-r border-solid border-slate-50/10">
         <Dropdown
           items={[
             'English',
@@ -57,13 +57,13 @@ function Nav() {
       </div>
 
       <div className="flex ml-auto">
-        <div className="bg-slate-900 hover:bg-slate-800 text-gray-400 hover:text-white text-sm flex justify-center items-center py-2 px-2 rounded cursor-pointer mr-2">
+        <div className="flex items-center justify-center px-2 py-2 mr-2 text-sm text-gray-400 rounded cursor-pointer bg-slate-900 hover:bg-slate-800 hover:text-white">
           <FiHelpCircle />
         </div>
-        <div className="bg-slate-900 hover:bg-slate-800 text-gray-400 hover:text-white text-sm flex justify-center items-center py-2 px-2 rounded cursor-pointer mr-2">
+        <div className="flex items-center justify-center px-2 py-2 mr-2 text-sm text-gray-400 rounded cursor-pointer bg-slate-900 hover:bg-slate-800 hover:text-white">
           <FiBell />
         </div>
-        <div className="bg-indigo-600 hover:bg-indigo-500 text-white text-xs flex justify-center items-center py-2 px-2 rounded cursor-pointer mr-2">
+        <div className="flex items-center justify-center px-2 py-2 mr-2 text-xs text-white bg-indigo-600 rounded cursor-pointer hover:bg-indigo-500">
           Connect Wallet
         </div>
       </div>

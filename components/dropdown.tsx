@@ -22,7 +22,7 @@ export default function Dropdown(props: {
         {props.trigger ? (
           props.trigger
         ) : (
-          <div className="bg-slate-900 hover:bg-slate-800 text-gray-400 hover:text-white w-24 text-sm flex justify-center items-center py-2 px-2 rounded cursor-pointer">
+          <div className="flex items-center justify-center w-24 px-2 py-2 text-sm text-gray-400 rounded cursor-pointer bg-slate-900 hover:bg-slate-800 hover:text-white">
             {props.title ?? _item}
             <FiChevronDown className="ml-auto" />
           </div>
